@@ -22,6 +22,7 @@ description := "Sbt plugin to benchmark Scala compilation."
 sbtPlugin := true
 crossSbtVersions := Vector("1.0.0", "0.13.13")
 publishMavenStyle := false
+publishTo := Some(Resolver.url(s"Triplequote Plugins Releases", url("https://repo.triplequote.com/artifactory/sbt-plugins-release"))(Resolver.ivyStylePatterns))
 
 // Release
 import ReleaseTransformations._
